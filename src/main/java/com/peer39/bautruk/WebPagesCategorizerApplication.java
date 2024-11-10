@@ -1,4 +1,4 @@
-package com.peer39.bautruk.categorizer;
+package com.peer39.bautruk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
