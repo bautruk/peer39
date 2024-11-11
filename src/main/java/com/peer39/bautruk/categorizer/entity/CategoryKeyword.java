@@ -1,4 +1,4 @@
-package com.peer39.bautruk.categorizer.model;
+package com.peer39.bautruk.categorizer.entity;
 
 
 import lombok.EqualsAndHashCode;
@@ -9,6 +9,7 @@ import lombok.Getter;
 public class CategoryKeyword {
 
     private final String phrase;
+    private final int numberOfWords;
 
     public CategoryKeyword(String phrase) {
         if (phrase == null || phrase.trim().isEmpty()) {
@@ -21,5 +22,6 @@ public class CategoryKeyword {
         }
 
         this.phrase = phrase.toLowerCase().trim();
+        this.numberOfWords = words.length;
     }
 }

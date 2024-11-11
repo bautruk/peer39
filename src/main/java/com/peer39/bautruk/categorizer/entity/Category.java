@@ -1,4 +1,4 @@
-package com.peer39.bautruk.categorizer.model;
+package com.peer39.bautruk.categorizer.entity;
 
 import lombok.EqualsAndHashCode;
 
@@ -28,5 +28,4 @@ public class Category {
     public Set<CategoryKeyword> getKeywords() {
         return Collections.unmodifiableSet(keywords);
     }
-
 }

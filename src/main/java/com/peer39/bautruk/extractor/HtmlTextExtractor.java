@@ -33,7 +33,7 @@ public class HtmlTextExtractor {
         result = decodeHtmlEntities(result);
 
         // Clean up whitespace
-        result = MULTIPLE_SPACES.matcher(result).replaceAll(" ").trim();
+        result = MULTIPLE_SPACES.matcher(result).replaceAll(" ").trim().toLowerCase();
 
         return result;
     }
